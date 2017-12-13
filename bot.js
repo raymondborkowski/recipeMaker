@@ -1,6 +1,6 @@
 /* global require, module, console */
-import AlexaMessageBuilder from 'alexa-message-builder';
-import botBuilder from 'claudia-bot-builder';
+const AlexaMessageBuilder = require('alexa-message-builder');
+const botBuilder = require('claudia-bot-builder');
 
 function getIntentName(alexaPayload){
     return alexaPayload &&
