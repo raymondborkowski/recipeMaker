@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "disco_messenger_bot-executor",
+    "name": "food-app",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "y96n8npaqk",
+    "module": "bot"
+  }
+}
