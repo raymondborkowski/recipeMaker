@@ -4,10 +4,10 @@ const botBuilder = require('claudia-bot-builder');
 
 function getIntentName(alexaPayload){
     return alexaPayload &&
-      alexaPayload.request &&
-      alexaPayload.request.type === 'IntentRequest' &&
-      alexaPayload.request.intent &&
-      alexaPayload.request.intent.name;
+        alexaPayload.request &&
+        alexaPayload.request.type === 'IntentRequest' &&
+        alexaPayload.request.intent &&
+        alexaPayload.request.intent.name;
 }
 const api = botBuilder(
     (message, originalRequest) => {
@@ -20,15 +20,15 @@ const api = botBuilder(
                 response: {
                     outputSpeech: {
                         type: 'PlainText',
-                        text: 'Bye from Spelling Bee!',
+                        text: 'Bye from Spelling Bee!'
                     },
-                    shouldEndSession: true,
-                },
+                    shouldEndSession: true
+                }
             };
         }
         return {};
     },
-    { platforms: ['alexa'] },
+    { platforms: ['alexa'] }
 );
 
 module.exports = api;
